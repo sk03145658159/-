@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .contanier{
+            width: 100%;height: auto;
+            /*overflow: hidden;*/
+            border: 1px solid red;
+            margin: 100px auto;
+        }
+        .contanier>.row{
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            margin: auto;
+        }
+        @media screen and (min-width:600px){
+            .contanier{
+                width: 600px;
+            }
+            .contanier>.row>.col-s-1{
+                width: 8.33333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-s-2{
+                width: 16.666666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-s-3{
+                width: 25%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-s-4{
+                width: 33.33333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-s-5{
+                width: 41.66666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-s-6{
+                width: 50%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-s-7{
+                width: 58.333333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-s-8{
+                width: 66.66666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-s-9{
+                width: 75%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-s-10{
+                width: 83.33333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-s-11{
+                width: 91.6666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-s-12{
+                width: 100%;
+                height: 100%;
+                float: left;
+            }
+        }
+        @media screen and (min-width:900px){
+            .contanier{
+                width: 900px;
+            }
+            .contanier>.row>.col-m-1{
+                width: 8.33333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-m-2{
+                width: 16.666666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-m-3{
+                width: 25%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-m-4{
+                width: 33.33333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-m-5{
+                width: 41.66666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-m-6{
+                width: 50%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-m-7{
+                width: 58.333333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-m-8{
+                width: 66.66666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-m-9{
+                width: 75%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-m-10{
+                width: 83.33333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-m-11{
+                width: 91.6666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-m-12{
+                width: 100%;
+                height: 100%;
+                float: left;
+            }
+        }
+        @media screen and (min-width:1200px){
+            .contanier{
+                width: 1200px;
+            }
+            .contanier>.row>.col-l-1{
+                width: 8.33333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-l-2{
+                width: 16.666666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-l-3{
+                width: 25%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-l-4{
+                width: 33.33333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-l-5{
+                width: 41.66666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-l-6{
+                width: 50%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-l-7{
+                width: 58.333333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-l-8{
+                width: 66.66666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-l-9{
+                width: 75%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-l-10{
+                width: 83.33333333%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-l-11{
+                width: 91.6666666%;
+                height: 100%;
+                float: left;
+            }
+            .contanier>.row>.col-l-12{
+                width: 100%;
+                height: 100%;
+                float: left;
+            }
+        }
+        .col-l-3{
+            height: 100px;
+            border: 1px solid tan;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="contanier">
+        <div class="row">
+            <div class="col-l-3 col-m-4 col-s-6"></div>
+            <div class="col-l-3 col-m-4 col-s-6"></div>
+            <div class="col-l-3 col-m-4"></div>
+            <div class="col-l-3"></div>
+        </div>
+    </div>
+</body>
+</html>
